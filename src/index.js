@@ -17,8 +17,12 @@ app.use(bodyparser.json());
 
 app.use('/', router);
 
-conn.sync({ force: false }).then(() => {
-    app.listen(3001, () => {
-      console.log('Listen in Port 3001'); 
-    });
+// conn.sync({ force: false }).then(() => {
+//     app.listen(3001, () => {
+//       console.log('Listen in Port 3001'); 
+//     });
+//   });
+
+  app.listen(3001, () => {
+    console.log('Listen in Port 3001'); 
   });
